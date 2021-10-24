@@ -1,0 +1,38 @@
+.mainImg {
+    height: 50px;
+    width: 50px;
+  }
+  
+.mainTitle {
+    font-weight:700;
+  }
+  
+.nav {
+    background-color: #fff;
+    font-weight: bold;
+  }
+
+.navItem {
+    width: 100%;
+  }
+
+@media screen and (min-width : 769px){
+    .nav .navbar-collapse {
+        left: 40%;
+        position: absolute;
+      }
+      .navbar-ul {
+        width: 600px;
+      }
+    }
+
+@media screen and (min-width : 769px) and (max-width : 1000px){
+    .nav .navbar-collapse {
+        left: 30%;
+        position: absolute;
+      }
+      .navbar-ul {
+        width: 500px;
+      }
+    }
+    
