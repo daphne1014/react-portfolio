@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 import {
     Collapse,
@@ -13,10 +13,20 @@ import {
     Col
 } from "reactstrap";
 
-function Header() {
+function Header(props) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const setIsClose = () => setIsOpen(false);
+    const {
+        setAboutSelected,
+        aboutSelected,
+        setContactSelected,
+        contactSelected,
+        setProjectSelected,
+        projectSelected,
+        setResumeSelected,
+        resumeSelected
+    } = props;
     return (
         <div>
             <Container>
@@ -32,19 +42,19 @@ function Header() {
                             <Col xs={3} sm={2} md={{ size: 1, offset: 1 }}>
                                 <NavbarToggler onClick={toggle} navbar />
                             </Col>
-                            <Collapse isOpen={isOpen} navbar className="navbar-collapse">
+                            <Collapse navbar isOpen={isOpen} className="navbar-collapse">
                                 <Nav navbar className="navbar-ul">
-                                    <NavItem className="navItem">
-                                        <NavLink href="about" onClick={setIsClose}>ABOUT ME</NavLink>
+                                    <NavItem className={`navItem && ${aboutSelected}`}>
+                                        <NavLink  onClick={()=>{setIsClose();setAboutSelected(true);setProjectSelected(false);setContactSelected(false);setResumeSelected(false)}}>ABOUT ME</NavLink>
                                     </NavItem>
-                                    <NavItem className="navItem">
-                                        <NavLink href="portfolio" onClick={setIsClose}>PORTFOLIO</NavLink>
+                                    <NavItem className={`navItem && ${projectSelected}`}>
+                                        <NavLink  onClick={()=>{setIsClose(); setProjectSelected(true); setContactSelected(false);setAboutSelected(false);setResumeSelected(false)}} >PORTFOLIO</NavLink>
                                     </NavItem>
-                                    <NavItem className="navItem">
-                                        <NavLink href="contact" onClick={setIsClose}>CONTACT</NavLink>
+                                    <NavItem className={`navItem && ${contactSelected}`}>
+                                        <NavLink  onClick={()=>{setIsClose(); setContactSelected(true); setProjectSelected(false);setAboutSelected(false);setResumeSelected(false)}} >CONTACT</NavLink>
                                     </NavItem>
-                                    <NavItem className="navItem">
-                                        <NavLink href="resume" onClick={setIsClose}>RESUME</NavLink>
+                                    <NavItem className={`navItem && ${resumeSelected}`}>
+                                        <NavLink onClick={()=>{setIsClose(); setContactSelected(false); setProjectSelected(false);setAboutSelected(false);setResumeSelected(true)}} >RESUME</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

@@ -234,3 +234,8 @@ html {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+
+.project-gif {
+  width: 450px;
+  height: 300px;
+}

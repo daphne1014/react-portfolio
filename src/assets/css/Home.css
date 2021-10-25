@@ -11,13 +11,13 @@
         font-size: 3em;
 }
 
-@media (max-width: 900px) {
+@media screen and (min-width : 769px) and (max-width : 1000px){
     #home .title {
             font-size: 2em;
         }
 }
 
-@media (max-width: 540px) {
+@media screen and (min-width : 769px) {
     #home.title {
             font-size: 1.5em;
     }
