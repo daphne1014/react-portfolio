@@ -34,7 +34,7 @@ function Header(props) {
                     <Col xs={12} sm={12} md={12}>
                         <Navbar light expand="md" className="nav" fixed="top">
                             <Col xs={{ size: 1 }} sm={{ size: 1 }} md={{ size: 1, offset: 1 }}>
-                                <NavbarBrand href="/">
+                                <NavbarBrand href="/react-portfolio">
                                     <img src={require(`./../../assets/img/daphne.png`).default} alt="logo" className="mainImg" />
                                     <span className="mainTitle">DAPHNE</span>
                                 </NavbarBrand>

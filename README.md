@@ -46,7 +46,7 @@ https://daphne1014.github.io/react-portfolio/
 
 ## Screenshot
   
-  ![screenshot image](./public/img/screenshot.JPG?raw=true "Screenshot") 
+  ![screenshot image](./src/assets/img/screenshot.JPG?raw=true "Screenshot") 
    
 ## Questions
   Feel free to reach out me on GitHub:  
