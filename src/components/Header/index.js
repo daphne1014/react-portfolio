@@ -45,16 +45,19 @@ function Header(props) {
                             <Collapse navbar isOpen={isOpen} className="navbar-collapse">
                                 <Nav navbar className="navbar-ul">
                                     <NavItem className={`navItem && ${aboutSelected}`}>
-                                        <NavLink  onClick={()=>{setIsClose();setAboutSelected(true);setProjectSelected(false);setContactSelected(false);setResumeSelected(false)}}>ABOUT ME</NavLink>
+                                        <a>
+                                        <NavLink href='#'  onClick={()=>{setIsClose();setAboutSelected(true);setProjectSelected(false);setContactSelected(false);setResumeSelected(false)}}>ABOUT ME</NavLink>
+                                        </a>
                                     </NavItem>
+
                                     <NavItem className={`navItem && ${projectSelected}`}>
-                                        <NavLink  onClick={()=>{setIsClose(); setProjectSelected(true); setContactSelected(false);setAboutSelected(false);setResumeSelected(false)}} >PORTFOLIO</NavLink>
+                                        <NavLink href='#'  onClick={()=>{setIsClose(); setProjectSelected(true); setContactSelected(false);setAboutSelected(false);setResumeSelected(false)}} >PORTFOLIO</NavLink>
                                     </NavItem>
                                     <NavItem className={`navItem && ${contactSelected}`}>
-                                        <NavLink  onClick={()=>{setIsClose(); setContactSelected(true); setProjectSelected(false);setAboutSelected(false);setResumeSelected(false)}} >CONTACT</NavLink>
+                                        <NavLink href='#'  onClick={()=>{setIsClose(); setContactSelected(true); setProjectSelected(false);setAboutSelected(false);setResumeSelected(false)}} >CONTACT</NavLink>
                                     </NavItem>
                                     <NavItem className={`navItem && ${resumeSelected}`}>
-                                        <NavLink onClick={()=>{setIsClose(); setContactSelected(false); setProjectSelected(false);setAboutSelected(false);setResumeSelected(true)}} >RESUME</NavLink>
+                                        <NavLink href='#' onClick={()=>{setIsClose(); setContactSelected(false); setProjectSelected(false);setAboutSelected(false);setResumeSelected(true)}} >RESUME</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>

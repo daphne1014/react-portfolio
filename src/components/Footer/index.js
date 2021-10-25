@@ -5,7 +5,7 @@ import {faGoogle, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icon
 
 function Footer() {
     return (
-        <footer class="text-center text-lg-start bg-light text-mute">
+        <footer class="text-center text-lg-start bg-light text-mute fixed-bottom">
             <section class="d-flex justify-content-center p-4 border-bottom">
                 <div>
                     <a href="mailto: daphnesong1014@gmail.com" class="me-4 text-reset">

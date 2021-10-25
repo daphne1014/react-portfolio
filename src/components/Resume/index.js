@@ -53,7 +53,7 @@ function Resume() {
                             </span>
                             <span className="padding-left-right-1e">
                                 <a
-                                    href="/../../assets/documents/resume.pdf" download
+                                    href={require(`./../../assets/documents/resume.pdf`).default} download
                                 >
                                     <FontAwesomeIcon
                                         icon={faDownload}
