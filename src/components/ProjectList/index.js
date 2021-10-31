@@ -50,7 +50,7 @@ function ProjectList() {
                             </p>
                             <div className="padding-top-1e">
                                 <a
-                                    href={project.link}
+                                    href={project.github}
                                     className="padding-left-right-1e"
                                 >
                                     <FontAwesomeIcon
@@ -59,7 +59,7 @@ function ProjectList() {
                                     />
                                 </a>
                                 <a
-                                    href={project.github}
+                                    href={project.link}
                                     className="padding-left-right-1e"
 
                                 >
