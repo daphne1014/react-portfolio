@@ -30,8 +30,10 @@ function ProjectList() {
             github: "https://github.com/daphne1014/the-tech-blog"
         },
         {
-            name: "Coming Soon!",
-            description: "More projects will be added soon."
+            name: "Toilet SOS",
+            description: "This is a program that will find a potty in a given location. You will also have the ability to add a new potty to the database with a review and rating.",
+            link: "http://project-toilet.herokuapp.com/",
+            github: "https://github.com/eisforgene/project-toilet"
         },
         {
             name: "Coming Soon!",
